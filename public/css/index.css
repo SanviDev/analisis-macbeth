@@ -7,15 +7,40 @@
     overflow: hidden;
 }
 
+section {
+    margin: 2rem auto 2rem auto;
+}
+
+.text-with-image {
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr auto;
+    grid-gap: 1rem;
+    height:110px;
+
+    & .grid-img {
+        height: 115px;
+        margin-right: 50px;
+        margin-bottom: 15px;
+        position:initial;
+        right: 0;
+        margin-left: 2rem;
+    }
+}
+
 .text {
     margin: 2rem auto 2rem auto;
     width: 70%;
     font-size: 20px;
 }
 
-img {height: 100%;}
+img {
+    height: 100%;
+}
 
-.text p {margin: 1rem;}
+.text p {
+    margin: 1rem;
+}
 
 table {
     width: 70%;
@@ -24,7 +49,9 @@ table {
     margin: 0 auto;
 }
 
-thead {background-color: #111;}
+thead {
+    background-color: #111;
+}
 
 th {
     padding: 1rem;
@@ -38,42 +65,90 @@ td {
     border-left: 1px solid#111;
 }
 
-td:nth-child(1) {background-color: #e5e5e5;}
+td:nth-child(1) {
+    background-color: #e5e5e5;
+}
 
-tr {border-bottom: solid 1px#111;}
+tr {
+    border-bottom: solid 1px#111;
+}
 
 hr {
     width: 55%;
     margin: 4rem auto;
 }
 
-.movil {display: none;}
+.movil {
+    display: none;
+}
 
-body.dark table {border: solid 1px#fff;}
 
-body.dark thead {background-color: #eaeaea;}
 
-body.dark th {color: #232323;}
 
-body.dark td {color: #fafafa;}
 
-body.dark td:nth-child(1) {background-color: #1e1e1e;}
 
-body.dark tr {border-bottom: solid 1px#eaeaea;}
+/** Dark Mode */
+
+body.dark table {
+    border: solid 1px#fff;
+}
+
+body.dark thead {
+    background-color: #eaeaea;
+}
+
+body.dark th {
+    color: #232323;
+}
+
+body.dark td {
+    color: #fafafa;
+}
+
+body.dark td:nth-child(1) {
+    background-color: #1e1e1e;
+}
+
+body.dark tr {
+    border-bottom: solid 1px#eaeaea;
+}
+
+
+
+
+/** Media Queries */
 
 @media screen and (max-width: 768px) {
-    .contain {width: 100%;}
+    .contain {
+        width: 100%;
+    }
 
-    .desktop {display: none;}
+    .desktop {
+        display: none;
+    }
 
-    .text {width: 90%;}
+    .text {
+        width: 90%;
+    }
 
     .movil {
         display: table;
         width: 90%;
     }
 
-    td {border-right: solid 1px #111;}
+    td {
+        border-right: solid 1px #111;
+    }
 
-    body.dark td {border-right:solid 1px #fff;}
+    body.dark td {
+        border-right: solid 1px #fff;
+    }
+    .text-with-image {
+        display: flex;
+        height: auto;
+        flex-direction: column;
+        & .grid-img {
+            height: auto;
+        }
+    }
 }
