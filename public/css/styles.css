@@ -100,6 +100,9 @@ body.dark .contain {
     background-color: #232323;
     box-shadow: #151515 0 0px 3px 3px;
 }
+.underline {
+    text-decoration: underline;
+}
 body.dark h2 {color: #fff;}
 body.dark hr {background-color: #fdfdfd;}
 body.dark footer {background-color: #121213;}
