@@ -103,6 +103,10 @@ body.dark .contain {
 .underline {
     text-decoration: underline;
 }
+h3 {
+    margin-bottom: 1rem;
+    margin-top: 2rem;
+}
 body.dark h2 {color: #fff;}
 body.dark hr {background-color: #fdfdfd;}
 body.dark footer {background-color: #121213;}
